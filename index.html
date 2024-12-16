@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mobilya Sepeti</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status"></div>
+        <img class="position-absolute top-50 start-50 translate-middle" src="img/icons/icon-1.png" alt="Icon">
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-3">
+                    <a class="text-body px-2" href="tel:+0123456789"><i class="fa fa-phone-alt text-primary me-2"></i>+012 345 6789</a>
+                    <a class="text-body px-2" href="mailto:info@example.com"><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</a>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-2">
+                    <a class="text-body px-2" href="">Terms</a>
+                    <a class="text-body px-2" href="">Privacy</a>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square btn-outline-body me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="text-primary m-0"><img class="me-3" src="img/icons/icon-1.png" alt="Icon">MobilyaSepeti</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">Mağaza</a>
+                    <div class="dropdown-menu border-0 m-0">
+                        <a href="kategoriler.html" class="dropdown-item">Kategoriler</a>
+                        <a href="urundetay.html" class="dropdown-item">Ürün Detayları</a>
+                        <a href="onay.html" class="dropdown-item">Duyurular</a>
+                        <a href="sepet.html" class="dropdown-item ">Sepet</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div>                
+                <a href="index.html" class="nav-item nav-link active">Ana Sayfa</a>
+                <a href="about.html" class="nav-item nav-link">Hakkımızda</a>
+                <a href="service.html" class="nav-item nav-link">Hizmetler</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sayfalar</a>
+                    <div class="dropdown-menu border-0 m-0">
+                        <a href="feature.html" class="dropdown-item">Özelliklerimiz</a>
+                        <a href="project.html" class="dropdown-item">Projelerimiz</a>
+                        <a href="team.html" class="dropdown-item">Takım Üyeleri</a>
+                        <a href="appointment.html" class="dropdown-item">Randevu</a>
+                        <a href="testimonial.html" class="dropdown-item">Referans</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div>        
+                <a href="contact.html" class="nav-item nav-link">İletişim</a>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">HESABIM</a>
+                    <div class="dropdown-menu border-0 m-0">
+                        <a href="admin.html" class="dropdown-item">Admin Hesabı</a>
+                        <a href="user.html" class="dropdown-item">Kullanıcı Hesabı</a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">MobilyaSepeti</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-1.jpg'>">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-1 text-white animated slideInDown">Mobilyada Tasarım ve İç Mekan Şıklığında En İyisi</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Zarafeti ve işlevselliği bir araya getiren özel mobilya tasarımlarımızla, yaşam alanlarınıza değer katıyoruz. Her detayda estetik, her parçada kaliteyi keşfedin.</p>
+                                <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Devamını Oku</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-2.jpg'>">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-1 text-white animated slideInDown">Mobilyada Tasarım ve İç Mekan Şıklığında En İyisi</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Zarafeti ve işlevselliği bir araya getiren özel mobilya tasarımlarımızla, yaşam alanlarınıza değer katıyoruz. Her detayda estetik, her parçada kaliteyi keşfedin.</p>
+                                <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Devamını Oku</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative" data-dot="<img src='img/anaresim1.webp'>">
+                <img class="img-fluid" src="img/anaresim1.webp" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h1 class="display-1 text-white animated slideInDown">Mobilyada Tasarım ve İç Mekan Şıklığında En İyisi</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-3">Zarafeti ve işlevselliği bir araya getiren özel mobilya tasarımlarımızla, yaşam alanlarınıza değer katıyoruz. Her detayda estetik, her parçada kaliteyi keşfedin.</p>
+                                <a href="" class="btn btn-primary py-3 px-5 animated slideInLeft">Devamını Oku</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+
+
+    <!-- Duyurular ve Kampanyalar Başlangıç -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Duyurular & Kampanyalar</h2>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Kampanya 1</h5>
+                        <p class="card-text">Modern mobilyalarda %30 indirim! Acele edin, stoklarla sınırlıdır.</p>
+                        <a href="WebTasarımDersiProjesi.pdf" download="Kampanya1" class="btn btn-primary">PDF İndir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Kampanya 2</h5>
+                        <p class="card-text">5000 TL üzeri alışverişlerde ücretsiz kargo fırsatı!</p>
+                        <a href="WebTasarımDersiProjesi.pdf" download="Kampanya2" class="btn btn-primary">PDF İndir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Duyuru</h5>
+                        <p class="card-text">Yeni koleksiyonumuz şimdi satışta! Kaçırmayın.</p>
+                        <a href="WebTasarımDersiProjesi.pdf" download="Duyuru" class="btn btn-primary">PDF İndir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Duyurular ve Kampanyalar Bitiş -->
+
+
+
+
+
+    <!-- Facts Start -->
+    <div class="container-xxl py-5">
+        <div class="container pt-5">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="fact-item text-center bg-light h-100 p-5 pt-0">
+                        <div class="fact-icon">
+                            <img src="img/icons/icon-2.png" alt="Icon">
+                        </div>
+                        <h3 class="mb-3">Tasarım Yaklaşımı</h3>
+                        <p class="mb-0">Estetik ve işlevselliğin buluşma noktası: Özel tasarım mobilyalarla evinizi güzelleştirin. Her ayrıntıda kalite, her tasarımda özen!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="fact-item text-center bg-light h-100 p-5 pt-0">
+                        <div class="fact-icon">
+                            <img src="img/icons/icon-3.png" alt="Icon">
+                        </div>
+                        <h3 class="mb-3">Yenilikçi Çözümler</h3>
+                        <p class="mb-0">Modern tasarımlar ve akıllı çözümlerle yaşam alanlarınızı yeniden şekillendiriyoruz. İhtiyaçlarınıza uygun işlevsel ve estetik mobilyalarla hayatınızı kolaylaştırıyoruz.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="fact-item text-center bg-light h-100 p-5 pt-0">
+                        <div class="fact-icon">
+                            <img src="img/icons/icon-4.png" alt="Icon">
+                        </div>
+                        <h3 class="mb-3">Proje Yönetimi</h3>
+                        <p class="mb-0">Proje süreçlerinizde uzman desteğiyle, fikirlerinizi gerçeğe dönüştürüyoruz. Tasarımdan uygulamaya kadar her aşamada yanınızdayız.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <img class="img-fluid" src="img/anaresim6.webp" alt="">
+                        <img class="img-fluid" src="img/anaresim2.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h4 class="section-title">Hakkımızda</h4>
+                    <h1 class="display-5 mb-4">Hayalinizdeki Ev İçin Mobilya Tasarlıyoruz</h1>
+                    <p>Her detayında zarafeti hissedeceğiniz mobilyalar. Modern, şık ve işlevsel tasarımlarımızla yaşam alanlarınıza yeni bir boyut katıyoruz. Hayalinizdeki evin atmosferini, kaliteli ve estetik mobilyalarımızla tamamlayın.</p>
+                    <p class="mb-4">Kalite ve konforun birleştiği mobilyalarla tanışın. Şık tasarımlarımız, yaşam alanlarınızı daha keyifli hale getirmek için özenle üretiliyor. Evinizde huzur ve estetik bir atmosfer yaratmak bizim işimiz.</p>
+                    <div class="d-flex align-items-center mb-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center border border-5 border-primary" style="width: 120px; height: 120px;">
+                            <h1 class="display-1 mb-n2" data-toggle="counter-up">25</h1>
+                        </div>
+                        <div class="ps-4">
+                            <h3>Yıllar</h3>
+                            <h3>Çalışma</h3>
+                            <h3 class="mb-0">Deneyim</h3>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5" href="">Devamını oku</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h4 class="section-title">Hizmetlerimiz</h4>
+                <h1 class="display-5 mb-4">Hayalinizdeki Modern Tasarımı Gerçekleştiriyoruz</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="img/anaresim1.webp" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="img/icons/icon-5.png" alt="Icon">
+                            <h3 class="mb-3">Tasarım</h3>
+                            <p class="mb-4">Estetik ve işlevselliği birleştirerek yaşam alanlarınıza değer katıyoruz. Her tasarımda kaliteyi ve modernliği bir araya getiriyor, evlerinizi şıklıkla donatıyoruz.</p>
+                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Devamını Oku</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="img/anaresim2.webp" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="img/icons/icon-6.png" alt="Icon">
+                            <h3 class="mb-3">3D Animasyon</h3>
+                            <p class="mb-4">"Hayalinizdeki yaşam alanlarını yaratmak için estetik ve işlevselliği bir araya getiriyoruz. Modern tasarımlarımızla evlerinize zarafet katıyoruz.</p>
+                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Devamını Oku</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="img/anaresim3.webp" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="img/icons/icon-7.png" alt="Icon">
+                            <h3 class="mb-3">Ev Planlamada Yaratıcı Çözümler</h3>
+                            <p class="mb-4">Hayalinizdeki evi oluştururken her detayı düşünerek, fonksiyonel ve estetik çözümler sunuyoruz. Modern tasarımlarımızla yaşam alanlarınızı mükemmel bir şekilde planlıyoruz.</p>
+                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Devamını Oku</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="img/anaresim4.webp" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="img/icons/icon-8.png" alt="Icon">
+                            <h3 class="mb-3">Mobilya Tasarımında Şıklık ve Konfor</h3>
+                            <p class="mb-4">Evinizin her köşesine uyum sağlayacak, şıklığı ve konforu bir arada sunan özel mobilya tasarımları ile yaşam alanlarınızı yeniden şekillendiriyoruz.</p>
+                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Devamını Oku</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="img/anaresim5.jpg" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="img/icons/icon-9.png" alt="Icon">
+                            <h3 class="mb-3">Mobilya Yenileme ve Tasarım Hizmetleri</h3>
+                            <p class="mb-4">Eski mobilyalarınızı yenileyerek, modern dokunuşlarla yaşam alanlarınıza taze bir soluk katıyoruz.</p>
+                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Devamını Oku</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex position-relative text-center h-100">
+                        <img class="bg-img" src="img/anaresim6.webp" alt="">
+                        <div class="service-text p-5">
+                            <img class="mb-4" src="img/icons/icon-10.png" alt="Icon">
+                            <h3 class="mb-3">Mobilya Üretimi ve Kurulum Hizmetleri</h3>
+                            <p class="mb-4">Özel tasarım mobilyalarınızı sağlam bir şekilde üretiyor, her alan için mükemmel uyum sağlayacak şekilde kurulumunu gerçekleştiriyoruz.</p>
+                            <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Devamını Oku</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h4 class="section-title">Neden Bizi Seçmelisiniz?!</h4>
+                    <h1 class="display-5 mb-4">Neden Bize Güvenmelisiniz? Hakkımızda daha fazla bilgi edinin!</h1>
+                    <p class="mb-4">Sizlere en kaliteli ve şık mobilyaları sunmak için buradayız. Yılların tarihsel deneyimiyle, her türlü ihtiyaca yönelik modern ve fonksiyonel mobilyalar üretiyoruz. Sadece bir ürün değil, yaşam alanınızı güzelleştirecek çözümler sunuyoruz.</p>
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="d-flex align-items-start">
+                                <img class="flex-shrink-0" src="img/icons/icon-2.png" alt="Icon">
+                                <div class="ms-4">
+                                    <h3>Kalite ve Estetik</h3>
+                                    <p class="mb-0">Mobilyalarımız, estetik tasarımlarının yanı sıra sıra uzun ömürlü tasarımlarla tasarlanmıştır. Her bir parça, yaşam alanınıza değer katacak şekilde tasarlandı.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex align-items-start">
+                                <img class="flex-shrink-0" src="img/icons/icon-3.png" alt="Icon">
+                                <div class="ms-4">
+                                    <h3>Yenilikçi Tasarımlar</h3>
+                                    <p class="mb-0">Her zevke hitap eden, özgün ve gelişmiş mobilya çözümleri sunuyoruz. Şıklık ve fonksiyonelliği bir arada sunarak her alanı daha kullanışlı hale getiriyoruz.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex align-items-start">
+                                <img class="flex-shrink-0" src="img/icons/icon-4.png" alt="Icon">
+                                <div class="ms-4">
+                                    <h3>Müşteri Memnuniyeti</h3>
+                                    <p class="mb-0">Müşteri genelinde en ön planda sürdürüyoruz. Mobilyalarımız, sadece estetik değil, aynı zamanda konfor ve işlevsellik açısından da ihtiyaçlarınızı karşılıyor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="feature-img">
+                        <img class="img-fluid" src="img/anaresim6.webp" alt="">
+                        <img class="img-fluid" src="img/anaresim2.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Project Start -->
+    <div class="container-xxl project py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h4 class="section-title">Projelerimiz</h4>
+                <h1 class="display-5 mb-4">En Son Projelerimizi ve Yenilikçi Çalışmalarımızı Ziyaret Edin</h1>
+            </div>
+            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-4">
+                    <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                            <h3 class="m-0">Modern Kompleks Tasarımlar</h3>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                            <h3 class="m-0">Konforlu Tasarımlar</h3>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                            <h3 class="m-0">Modern ve Şık Tasarımlar</h3>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                            <h3 class="m-0">Estetik ve Konforlu Mobilyalar</h3>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="tab-content w-100">
+                        <div class="tab-pane fade show active" id="tab-pane-1">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/project-1.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h1 class="mb-3">Mobilya Sektöründe 25 Yıllık Deneyim</h1>
+                                    <p class="mb-4">Modern tasarımlar ve kaliteli işçilikle yaşam alanlarınıza zarafet katıyoruz. Her detayda estetik, her parçada fonksiyonellik sunuyoruz.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Tasarım Yaklaşımı</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Yenilikçi Çözümler</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Proje Yönetimi</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-2">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/ktakimi1.png"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h1 class="mb-3">Mobilya Sektöründe 25 Yıllık Deneyim</h1>
+                                    <p class="mb-4">Modern tasarımlar ve kaliteli işçilikle yaşam alanlarınıza zarafet katıyoruz. Her detayda estetik, her parçada fonksiyonellik sunuyoruz.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Tasarım Yaklaşımı</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Yenilikçi Çözümler</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Proje Yönetimi</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-3">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/project-3.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h1 class="mb-3">Mobilya Sektöründe 25 Yıllık Deneyim</h1>
+                                    <p class="mb-4">Modern tasarımlar ve kaliteli işçilikle yaşam alanlarınıza zarafet katıyoruz. Her detayda estetik, her parçada fonksiyonellik sunuyoruz.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Tasarım Yaklaşımı</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Yenilikçi Çözümler</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Proje Yönetimi</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-4">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="img/anaresim3.webp"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h1 class="mb-3">Mobilya Sektöründe 25 Yıllık Deneyim</h1>
+                                    <p class="mb-4">Modern tasarımlar ve kaliteli işçilikle yaşam alanlarınıza zarafet katıyoruz. Her detayda estetik, her parçada fonksiyonellik sunuyoruz.</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Tasarım Yaklaşımı</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Yenilikçi Çözümler</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>Proje Yönetimi</p>
+                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Devamını Oku</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h4 class="section-title">Takım Üyeleri</h4>
+                <h1 class="display-5 mb-4">Hayalinizdeki Evi Şekillendiren Özgün Mobilya Tasarımları</h1>
+            </div>
+            <div class="row g-0 team-items">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h3 class="mt-2">Tasarımcımız</h3>
+                            <span class="text-primary">Tasarımcılarımız, her parçada estetik ve fonksiyonu bir araya getiriyor.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h3 class="mt-2">Satış Temsilcisi</h3>
+                            <span class="text-primary">Hayalinizdeki mobilyayı size sunan uzman!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h3 class="mt-2">İç Mekan Danışmanı</h3>
+                            <span class="text-primary">Eviniz için en iyi tasarımı keşfedin.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item position-relative">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h3 class="mt-2">Kalite Kontrol Uzmanı</h3>
+                            <span class="text-primary">DesignatHer parça, mükemmeliyetle test edilir.ion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Appointment Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h4 class="section-title">Randevu</h4>
+                    <h1 class="display-5 mb-4">Hayalinizdeki Proje İçin Randevu Alın</h1>
+                    <p class="mb-4">Her mobilyamızda estetik ve konforu bir araya getiriyoruz. Özel tasarımlarımızla yaşam alanlarınıza değer katıyor, size hayalinizdeki evi oluşturma fırsatı sunuyoruz. Modern çizgiler ve işlevsel detaylar, kaliteyle buluşuyor.</p>
+                    <div class="row g-4">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-light" style="width: 65px; height: 65px;">
+                                    <i class="fa fa-2x fa-phone-alt text-primary"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <p class="mb-2">Hemen Arayın</p>
+                                    <h3 class="mb-0">+012 345 6789</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-light" style="width: 65px; height: 65px;">
+                                    <i class="fa fa-2x fa-envelope-open text-primary"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <p class="mb-2">E-posta Gönderin</p>
+                                    <h3 class="mb-0">info@example.com</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <input type="text" class="form-control" placeholder="Your Name" style="height: 55px;">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="email" class="form-control" placeholder="Your Email" style="height: 55px;">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="text" class="form-control" placeholder="Your Mobile" style="height: 55px;">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <select class="form-select" style="height: 55px;">
+                                <option selected>Hizmet Seçin</option>
+                                <option value="1">Service 1</option>
+                                <option value="2">Service 2</option>
+                                <option value="3">Service 3</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="date" id="date" data-target-input="nearest">
+                                <input type="text"
+                                    class="form-control datetimepicker-input"
+                                    placeholder="Choose Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="time" id="time" data-target-input="nearest">
+                                <input type="text"
+                                    class="form-control datetimepicker-input"
+                                    placeholder="Choose Date" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Randevu Al</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appointment End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h4 class="section-title">Referans</h4>
+                <h1 class="display-5 mb-4">Bize ve Hizmetlerimize Güvenen Binlerce Müşteri</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-1.jpg' alt=''>">
+                    <p class="fs-5">Evinizi baştan aşağı yenilemek istedik ve gerçekten harika bir sonuç aldık! Hem estetik hem de fonksiyonel açıdan tam ihtiyaçlarımıza uygun mobilyalar tasarlandı. Teşekkür ederiz!</p>
+                    <h3>Client Name</h3>
+                    <span class="text-primary">Profession</span>
+                </div>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-2.jpg' alt=''>">
+                    <p class="fs-5">Modern ve şık tasarımlarınızla evimi adeta yeniden şekillendirdiniz. Her detayda kaliteyi hissettim. Hem şık hem de rahat mobilyalarla yaşam alanımı daha keyifli hale getirdiniz.</p>
+                    <h3>Client Name</h3>
+                    <span class="text-primary">Profession</span>
+                </div>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-3.jpg' alt=''>">
+                    <p class="fs-5">Alışverişimiz son derece kolay ve hızlıydı. Mobilyalarım tam istediğim gibi geldi ve kurulum süreci çok profesyoneldi. Her şey tam zamanında ve eksiksizdi.</p>
+                    <h3>Client Name</h3>
+                    <span class="text-primary">Profession</span>
+                </div>
+            </div>      
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Address</h3>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-body me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Hizmetler</h3>
+                    <a class="btn btn-link" href="">Modern Mobilya Tasarımı</a>
+                    <a class="btn btn-link" href="">3D Mobilya Görselleştirme</a>
+                    <a class="btn btn-link" href="">Ev ve Mekan Yerleşim Planlaması</a>
+                    <a class="btn btn-link" href="">İç Mekan Dekorasyonu</a>
+                    <a class="btn btn-link" href="">Mobilya Üretimi ve Kurulumu</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Hızlı Bağlantılar</h3>
+                    <a class="btn btn-link" href="">Hakkımızda</a>
+                    <a class="btn btn-link" href="">İletişim</a>
+                    <a class="btn btn-link" href="">Hizmetler</a>
+                    <a class="btn btn-link" href="">Şartlar ve Koşullar</a>
+                    <a class="btn btn-link" href="">Destek</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Haber Bülteni</h3>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Üye Ol</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">Mobilya Sepeti</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                        <br> Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
