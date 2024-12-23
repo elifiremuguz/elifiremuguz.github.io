@@ -10,6 +10,7 @@ PROJE GEREKSİNİMLERİ
 4)	Bootstrap: Mobil uyumlu ve kullanıcı dostu arayüzler geliştirmek için kullanılan CSS kütüphanesidir.
 
 Ana Sayfa
+
 Ana sayfa, kullanıcıları karşılayan modern ve çekici bir tasarımla hazırlanmıştır.
 ![1](https://github.com/user-attachments/assets/16963bb3-ab9c-47c1-a226-1c4f9128f3a8)
 
